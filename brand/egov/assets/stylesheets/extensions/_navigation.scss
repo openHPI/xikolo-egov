@@ -1,0 +1,140 @@
+//----------------------------------------------------
+//    $CONTENTS
+//
+//    Navigation style overrides
+//----------------------------------------------------
+// Main navigation
+// Course filter
+// Dropdowns
+// Tab navigation (nav-tabs)
+
+/* ------------------------------------*\
+    $Main navigation
+\*------------------------------------ */
+
+// stylelint-disable no-descending-specificity
+.navigation-bar {
+  .navigation-item__main,
+  .navigation-profile-item__main {
+    height: 40px;
+  }
+
+  .navigation-item__main {
+    &:hover,
+    &:focus,
+    &--active {
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 15px;
+    }
+  }
+
+  .navigation-item__menu,
+  .navigation-profile-item__menu {
+    .navigation-item__main {
+      &:hover,
+      &:focus,
+      &--active {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .navigation-logo img {
+    margin-bottom: 15px;
+  }
+}
+
+//------------------------------------
+//   $Course filter
+//------------------------------------
+
+.filter .nav-pills {
+  background: $primary-color;
+}
+
+//------------------------------------
+//   $Dropdowns
+//------------------------------------
+
+.open > .btn-default.dropdown-toggle:hover,
+.open > .btn-default.dropdown-toggle:focus {
+  background: $egov-green;
+}
+
+.dropdown {
+  &-menu {
+    li a {
+      &:active,
+      &:hover,
+      &:focus {
+        background: $egov-green;
+        color: $white;
+      }
+    }
+
+    li.active a {
+      background: $egov-green;
+      color: $white;
+    }
+  }
+
+  &-toggle {
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus {
+      background: $egov-green;
+      color: $white;
+    }
+  }
+}
+
+//------------------------------------
+//    $Tab-Navigation (nav-tabs)
+//------------------------------------
+
+/* stylelint-disable-next-line plugin/stylelint-bem-namics */
+.dashboard_nav_wrapper {
+  margin-bottom: 2em;
+}
+
+.nav.nav-tabs {
+  padding: 1em;
+  padding-bottom: 0.7em;
+  border: none;
+  margin: 1em 0;
+  background: $white;
+
+  li a {
+    border: none;
+    border-bottom: 4px solid transparent;
+    background: inherit;
+    color: $primary-color;
+    font-weight: bold;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border: none;
+      background: inherit;
+      color: $egov-green;
+    }
+  }
+
+  li.active a {
+    border: none;
+    border-bottom: 4px solid $egov-green;
+    background: inherit;
+    color: $egov-green;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border: none;
+      border-bottom: 4px solid $egov-green;
+      background: inherit;
+      color: $egov-green;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+//------------------------------------
+//    $CONTENTS
+//
+//    Module imports for eGov-Campus.
+//    (Imports and overrides the Xikolo base style)
+//------------------------------------
+
+@import "theme/colors";
+
+// Color schema definition
+@import "theme/color_schema";
+
+// Variables, mixin and function declarations
+@import "stylesheets/theme/common/variables";
+@import "stylesheets/theme/common/helpers";
+
+// Extracted common design parts for easier reusability and change
+@import "theme/design";
+
+// Font
+$basefont: "EncodeSans", sans-serif;
+$corporatefont: "Overpass", sans-serif;
+
+// Page sizing
+$navbar-height: 95px;
+
+//------------------------------------
+//    $DEFAULT-VARIABLES
+//------------------------------------
+// Please set here your custom values:
+
+// MAIN navigation
+$navigation-logo-height: 30px;
+$navigation-item-font-weight: 700;
+$navigation-bar-border: none;
+
+$navigation-item-selected-bg: none;
+$navigation-item-selected-color: none;
+$navigation-item-hover-bg: none;
+$navigation-item-hover-color: $primary-500;
+
+$menu-navigation-item-bg: $primary-500;
+$menu-navigation-item-color: $white;
+$menu-navigation-item-selected-border: none;
+$menu-navigation-item-hover-bg: $egov-dark-green;
+$menu-navigation-item-hover-color: $white;
+$menu-navigation-item-separator-color: none;
+
+$navbar-breakpoint-m: 1250px;
+$navbar-breakpoint-sm: 930px;
+$navbar-breakpoint-s: 670px;
+
+// Filter
+$xi-filter-dropdown-bg: $primary-color;
+$xi-filter-dropdown-active-bg: $egov-green;
+$xi-filter-dropdown-items-active-bg: $egov-green;
+
+// Footer
+$xi-footer-background: $primary-color;
+$xi-footer-box-shadow: none;
+$xi-footer-link-hover-color: $egov-light-green;
+
+// Page header
+$pages-header-bg: $egov-dark-green;
+$pages-header-title-color: $white;
+$pages-header-subtitle-color: $egov-lighter-green;
+
+// Stands out more from the rest with the use of tertiary color
+$xi-infobox-info-border-color: $tertiary-color;
+
+// Video
+$xi-transcript-highlighted-background-color: $egov-gray-light;
+
+// Buttons
+$btn-outline-default: $primary-color;

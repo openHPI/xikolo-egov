@@ -1,0 +1,27 @@
+//------------------------------------
+//    $CONTENTS
+//
+//    egov color schema.
+//------------------------------------
+
+@import "colors";
+
+$primary-color: $primary-500;
+$secondary-color: $secondary-500;
+$tertiary-color: $tertiary-500;
+
+$gray: $gray-500;
+
+$link-color: $egov-green;
+$text-color: $primary-color;
+$inverse-text-color: $primary-color;
+$input-color: $text-color;
+$background-color: $egov-lighter-green;
+
+$quiz-color-correct: $success-500;
+$quiz-color-incorrect: $error-500;
+$quiz-color-partial: $information-500;
+
+$header-bg: $primary-color;
+
+$dashboard-score-card-bg: $egov-green;

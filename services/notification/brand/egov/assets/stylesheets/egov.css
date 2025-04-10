@@ -1,0 +1,71 @@
+/*
+ *= require application
+ */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d5f4f4;
+  color: #0a3c46;
+  font-size: 9pt;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+}
+
+table,
+tr,
+td {
+  border: 0px;
+}
+
+div.line {
+  width: 100%;
+  height: 1px;
+  background-color: #d5f4f4;
+  border-top: 1px solid #0a3c46;
+  margin-bottom: 17px;
+}
+
+td.with_line {
+  vertical-align: bottom;
+}
+
+.footer {
+  margin-top: 20px;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.65);
+  font-size: 0.75em;
+}
+
+div#footer {
+  padding: 0 10px 0 20px;
+}
+
+table#statistics {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td#statistics {
+  overflow: hidden;
+  word-break: normal;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+th#statistics {
+  font-weight: bold;
+}
+
+.course-name {
+  text-align: right;
+}

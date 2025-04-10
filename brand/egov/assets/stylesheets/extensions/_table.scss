@@ -1,0 +1,13 @@
+.table {
+  &.table-striped {
+    & > tbody {
+      & > tr:nth-of-type(even) {
+        background-color: $gray-100;
+      }
+
+      & > tr:nth-of-type(odd) {
+        background-color: $gray-50;
+      }
+    }
+  }
+}

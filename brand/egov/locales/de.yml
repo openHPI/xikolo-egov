@@ -1,0 +1,39 @@
+# eGov-Campus specific locale overrides
+de:
+  flash:
+    notice:
+      primary_email_suspended: >
+        <b>Ihre primäre E-Mail-Adresse wurde wegen Versandproblemen deaktiviert.</b> Gründe dafür können sein, dass die E-Mail-Adresse nicht mehr existiert,
+        oder dass Ihre Mailbox voll ist.
+
+  helpdesk:
+    notice: Haben Sie schon in <a href='https://egov-campus.org/faq' target='_blank' rel='noopener'>unseren FAQ</a> nach einer Antwort auf Ihre Frage gesucht?
+
+  account:
+    preferences:
+      show:
+        notification:
+          mail_info: Benachrichtigungen via E-Mail werden momentan an <em>%{email}</em> versendet.
+          primary_email_suspended: Ihre Benachrichtigungen per E-Mail wurden wegen eines Problems mit dem Versand an Ihre Mail-Adresse abgeschaltet.
+    sessions:
+      auth_connect:
+        provider_label:
+          egovcampus: eGov-Campus
+        provider_link:
+          egovcampus: https://egov-campus.org
+
+  course:
+    redeem_voucher:
+      proctoring_smowl:
+        info_title: ""
+        info_text: ""
+
+  dashboard:
+    not_enrolled_upcoming: 'Sie sind für keinen zukünftigen Kurs eingeschrieben. Bitte besuchen Sie unsere <a href="https://egov-campus.org/courses/lernangebote">Kursübersicht</a>.'
+    more_courses: ""
+
+  open_badges:
+    issuer_description: |
+      Der eGov-Campus bietet Bildungsangebote auf Hochschulniveau rund um das Thema E-Government und
+      Verwaltungsinformatik. Dadurch werden Sie zum digitalen Experten in Fragen zum öffentlichen Sektor
+      und verbessern nachhaltig Ihre Karrierechancen.

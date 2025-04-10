@@ -1,0 +1,70 @@
+//----------------------------------------------------*\
+//  $CONTENTS
+//  Button style overrides
+//----------------------------------------------------*/
+
+//
+// Base-Overrides..............Overrides for basic buttons
+// Course buttons
+//
+// stylelint-disable no-descending-specificity
+
+.btn {
+  @include egov-button();
+
+  &-primary {
+    background: $secondary-color;
+    color: $primary-color;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+
+  &-default {
+    background-color: $primary-color;
+    color: $white;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus {
+      background: $secondary-color;
+      color: $primary-color;
+    }
+  }
+}
+
+.course-actions a.course-action-button {
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:focus {
+    background: $secondary-color;
+    color: $primary-color;
+  }
+
+  &::before {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  &.course-action-quit,
+  &.course-action-details {
+    background: $primary-color;
+    color: $white;
+    font-weight: 600;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus {
+      background: $secondary-color;
+      color: $primary-color;
+    }
+  }
+}

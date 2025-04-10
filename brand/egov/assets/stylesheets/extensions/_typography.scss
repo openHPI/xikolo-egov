@@ -1,0 +1,13 @@
+@include declare-font-face("Overpass", "Overpass-Regular");
+@include declare-font-face("Overpass", "Overpass-Bold", bold);
+@include declare-font-face("Overpass", "Overpass-ExtraBold", bold);
+@include declare-font-face("Overpass", "Overpass-Italic", normal, italic);
+@include declare-font-face("Overpass", "Overpass-BoldItalic", bold, italic);
+@include declare-font-face(
+  "Overpass",
+  "Overpass-ExtraBoldItalic",
+  bold,
+  italic
+);
+@include declare-font-face("EncodeSans", "EncodeSans-Regular");
+@include declare-font-face("EncodeSans", "EncodeSans-SemiBold", bold);

@@ -1,0 +1,21 @@
+.login-box {
+  background-color: $primary-color;
+  color: $white;
+
+  a {
+    color: $egov-light-green;
+  }
+
+  .btn-default {
+    border: 3px solid $white;
+    color: $white;
+  }
+
+  .btn-primary,
+  .btn-default {
+    &:hover {
+      background-color: $white;
+      color: $primary-color;
+    }
+  }
+}

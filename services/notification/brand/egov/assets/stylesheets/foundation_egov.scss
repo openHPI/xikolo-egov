@@ -1,0 +1,66 @@
+// Brand color theme
+$egov-lighter-green: #d5f4f4;
+$egov-darker-green: #0a3c46;
+
+$brand-primary-color: $egov-darker-green;
+
+@import "foundation/default_settings";
+
+// Overrides
+// ---------
+
+// 1. Global
+$container-background: $primary-color;
+$body-background: $egov-lighter-green;
+
+// 4. Typography
+$global-font-color: $white;
+$small-font-color: $white;
+$anchor-text-decoration: underline;
+$anchor-color: $white;
+$header-margin-bottom: 30px;
+
+// 5. Button
+$button-border: 2px solid $white;
+
+// 6. Callout
+$callout-background: $primary-color;
+// Override for secondary callout
+// Otherwise, it has white text on bright background
+$callout-background-fade: 0%;
+
+@import "foundation/base";
+@import "foundation/custom";
+
+// Brand specific changes
+body {
+  // Theme-colored accent bar at the top of each email
+  border-top: 10px solid $primary-color;
+
+  // Header
+  // - white background for black brand logo
+  // - brand logo is smaller and vertically centered
+  // - label in primary color on white background
+  .header {
+    background-color: $white;
+    height: 90px;
+
+    img {
+      height: 27px;
+      margin-top: 30px;
+    }
+
+    .template-label {
+      color: $black;
+      margin-top: 20px;
+    }
+  }
+
+  h3 {
+    margin-top: 30px;
+  }
+
+  hr {
+    color: $egov-lighter-green;
+  }
+}
